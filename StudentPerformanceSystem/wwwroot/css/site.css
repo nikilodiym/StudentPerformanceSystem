@@ -29,3 +29,19 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+body{
+  background:#f4f6f9;
+}
+
+.navbar{
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+table{
+  background:white;
+}
+
+.card{
+  border-radius:12px;
+}

@@ -112,7 +112,6 @@ C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\o
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\scopedcss\bundle\StudentPerformanceSystem.styles.css
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\scopedcss\projectbundle\StudentPerformanceSystem.bundle.scp.css
-C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\x8up21ctd7-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\wpli1p429n-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\qyo32hrw42-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\l29fjd5g02-{0}-t1cqhe9u97-t1cqhe9u97.gz
@@ -187,3 +186,5 @@ C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\o
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\StudentPerformanceSystem.pdb
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\StudentPerformanceSystem.genruntimeconfig.cache
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\ref\StudentPerformanceSystem.dll
+C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\StudentPerformanceSystem.sourcelink.json
+C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\x8up21ctd7-{0}-ideh39wrn7-ideh39wrn7.gz

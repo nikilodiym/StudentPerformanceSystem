@@ -1,0 +1,30 @@
+﻿@page
+@model StudentPerformanceSystem.Features.Students.Pages.Index
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<div class="container mt-5">
+    <h2>Students</h2>
+
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <input asp-for="NewStudent.FirstName" placeholder="First Name"/>
+        <input asp-for="NewStudent.LastName" placeholder="Last Name"/>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <table>
+        @foreach (var student in Model.StudentList)
+        {
+            <tr>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>
+                    <a asp-page="StudentDetail" asp-route-id="@student.Id">Details</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

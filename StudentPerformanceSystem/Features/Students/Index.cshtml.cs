@@ -6,7 +6,7 @@ using StudentPerformanceSystem.Features.Students.Models;
 
 namespace StudentPerformanceSystem.Features.Students.Pages;
 
-public class Students : PageModel
+public class Index : PageModel
 {
     // Properties used by the Razor page
     public List<Student> StudentList { get; set; } = new();
