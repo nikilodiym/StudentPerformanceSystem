@@ -34,8 +34,12 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Features/Students/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU3R1ZGVudHNcSW5kZXguY3NodG1s
+[C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Features/Students/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU3R1ZGVudHNcUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Features/Students/Pages/StudentDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU3R1ZGVudHNcUGFnZXNcU3R1ZGVudERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Features/Users/Pages/Login.cshtml]
