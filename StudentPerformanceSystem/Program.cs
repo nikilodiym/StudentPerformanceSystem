@@ -8,8 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages(options =>
 {
-    // Map the feature page to a friendly route so you can navigate to /Students
-    options.Conventions.AddPageRoute("/Features/Students/Index", "/Students");
+    options.RootDirectory = "/";
+    options.Conventions.AddPageRoute("/Features/Students/Pages/Index", "/Students");
 });
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -20,8 +20,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>()
 
 var app = builder.Build();
 
-app.UseStaticFiles();      // додаємо
-app.UseRouting();          // додаємо
+app.UseStaticFiles();      
+app.UseRouting();          
 
 app.UseAuthentication();
 app.UseAuthorization();
