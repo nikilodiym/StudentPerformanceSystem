@@ -2,18 +2,69 @@
 @model StudentPerformanceSystem.Features.Courses.Index
 
 @{
-    Layout = null;
+    Layout = "/Pages/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Courses";
 }
 
-<!DOCTYPE html>
+<div class="container mt-5">
+    <h2>Courses</h2>
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
+    @if (!Model.HasTeachers)
+    {
+        <div class="alert alert-warning">
+            No teachers found. Add at least one teacher in the database before creating courses.
+        </div>
+    }
+
+    <form method="post" class="row g-3 mb-4">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-md-6">
+            <label asp-for="NewCourse.Title" class="form-label"></label>
+            <input asp-for="NewCourse.Title" class="form-control" placeholder="Course title" />
+            <span asp-validation-for="NewCourse.Title" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="NewCourse.TeacherId" class="form-label">Teacher</label>
+            <select asp-for="NewCourse.TeacherId" asp-items="Model.TeacherOptions" class="form-select" disabled="@(!Model.HasTeachers)">
+                <option value="">Select a teacher</option>
+            </select>
+            <span asp-validation-for="NewCourse.TeacherId" class="text-danger"></span>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" disabled="@(!Model.HasTeachers)">Add Course</button>
+        </div>
+    </form>
+
+    @if (Model.CourseList.Count == 0)
+    {
+        <div class="alert alert-info">No courses found yet.</div>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Teacher</th>
+                <th>Department</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var course in Model.CourseList)
+            {
+                <tr>
+                    <td>@course.Title</td>
+                    <td>@course.Teacher.Name</td>
+                    <td>@course.Teacher.Department</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
 </div>
-</body>
-</html>
+
+<partial name="_ValidationScriptsPartial" />

@@ -2,39 +2,54 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using StudentPerformanceSystem.Data;
 using StudentPerformanceSystem.Features.Students.Models;
 
 namespace StudentPerformanceSystem.Features.Students.Pages;
 
 public class Index : PageModel
 {
-    // Properties used by the Razor page
-    public List<Student> StudentList { get; set; } = new();
+    private readonly ApplicationDbContext _dbContext;
 
-    [BindProperty]
-    public Student NewStudent { get; set; } = new();
-
-    public void OnGet()
+    public Index(ApplicationDbContext dbContext)
     {
-        // Seed with some sample data for development/demo purposes
-        if (!StudentList.Any())
-        {
-            StudentList.Add(new Student { Id = 1, FirstName = "Alice", LastName = "Johnson", BirthDate = DateTime.UtcNow.AddYears(-20) });
-            StudentList.Add(new Student { Id = 2, FirstName = "Bob", LastName = "Williams", BirthDate = DateTime.UtcNow.AddYears(-22) });
-        }
+        _dbContext = dbContext;
     }
 
-    public IActionResult OnPost()
+    // Properties used by the Razor page
+    public List<Student> StudentList { get; private set; } = new();
+
+    [BindProperty]
+    public Student NewStudent { get; set; } = new()
+    {
+        BirthDate = DateTime.Today.AddYears(-18)
+    };
+
+    public async Task OnGetAsync()
+    {
+        await LoadStudentsAsync();
+    }
+
+    public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)
         {
+            await LoadStudentsAsync();
             return Page();
         }
 
-        // In a real app you'd persist NewStudent via DbContext. Here we just add to in-memory list and redirect.
-        NewStudent.Id = StudentList.Count + 1;
-        StudentList.Add(NewStudent);
+        _dbContext.Students.Add(NewStudent);
+        await _dbContext.SaveChangesAsync();
 
         return RedirectToPage();
+    }
+
+    private async Task LoadStudentsAsync()
+    {
+        StudentList = await _dbContext.Students
+            .OrderBy(student => student.LastName)
+            .ThenBy(student => student.FirstName)
+            .ToListAsync();
     }
 }

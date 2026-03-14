@@ -2,29 +2,70 @@
 @model StudentPerformanceSystem.Features.Students.Pages.Index
 
 @{
+    Layout = "/Pages/Shared/_Layout.cshtml";
     ViewData["Title"] = "Students";
 }
 
 <div class="container mt-5">
     <h2>Students</h2>
 
-    <form method="post">
+    <form method="post" class="row g-3 mb-4">
         @Html.AntiForgeryToken()
-        <input asp-for="NewStudent.FirstName" placeholder="First Name"/>
-        <input asp-for="NewStudent.LastName" placeholder="Last Name"/>
-        <button type="submit">Add Student</button>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-md-4">
+            <label asp-for="NewStudent.FirstName" class="form-label"></label>
+            <input asp-for="NewStudent.FirstName" class="form-control" placeholder="First Name" />
+            <span asp-validation-for="NewStudent.FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="NewStudent.LastName" class="form-label"></label>
+            <input asp-for="NewStudent.LastName" class="form-control" placeholder="Last Name" />
+            <span asp-validation-for="NewStudent.LastName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="NewStudent.BirthDate" class="form-label"></label>
+            <input asp-for="NewStudent.BirthDate" type="date" class="form-control" />
+            <span asp-validation-for="NewStudent.BirthDate" class="text-danger"></span>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Add Student</button>
+        </div>
     </form>
 
-    <table>
-        @foreach (var student in Model.StudentList)
-        {
+    @if (Model.StudentList.Count == 0)
+    {
+        <div class="alert alert-info">No students found yet. Add the first one above.</div>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
             <tr>
-                <td>@student.FirstName</td>
-                <td>@student.LastName</td>
-                <td>
-                    <a asp-page="StudentDetail" asp-route-id="@student.Id">Details</a>
-                </td>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Birth Date</th>
+                <th></th>
             </tr>
-        }
-    </table>
+            </thead>
+            <tbody>
+            @foreach (var student in Model.StudentList)
+            {
+                <tr>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                    <td>@student.BirthDate.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <a asp-page="StudentDetail" asp-route-id="@student.Id">Details</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
 </div>
+
+<partial name="_ValidationScriptsPartial" />
