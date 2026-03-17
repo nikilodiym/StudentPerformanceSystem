@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krenov\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj": {}
+    "C:\\Users\\nikit\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krenov\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj": {
+    "C:\\Users\\nikit\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krenov\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj",
+        "projectUniqueName": "C:\\Users\\nikit\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj",
         "projectName": "StudentPerformanceSystem",
-        "projectPath": "C:\\Users\\krenov\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj",
-        "packagesPath": "C:\\Users\\krenov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krenov\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\obj\\",
+        "projectPath": "C:\\Users\\nikit\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\StudentPerformanceSystem.csproj",
+        "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikit\\RiderProjects\\StudentPerformanceSystem\\StudentPerformanceSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\krenov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\krenov\\.dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
