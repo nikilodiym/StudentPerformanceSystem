@@ -19,6 +19,9 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #f8f9fa;
+  color: #212529;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -30,18 +33,67 @@ body {
   text-align: start;
 }
 
-body{
-  background:#f4f6f9;
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.navbar{
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
-table{
-  background:white;
+.container main.container {
+  max-width: 1000px;
 }
 
-.card{
-  border-radius:12px;
+table {
+  background: white;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  margin-bottom: 1rem;
+}
+
+footer.footer {
+  padding: 1.5rem 0;
+}
+
+.courses-page h1 {
+  margin: 0;
+}
+
+.table thead th {
+  background-color: #f1f3f5;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+/* Typography */
+h1, .h1, h2, .h2, h3, .h3 { color: #1f2937; }
+
+/* Hero / header area */
+.header-hero {
+    background: linear-gradient(90deg, rgba(37,99,235,0.08), rgba(99,102,241,0.04));
+    padding: 2.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-hero h1 { font-weight: 600; }
+
+/* Buttons */
+.btn-primary { background-color: #2563eb; border-color: #2563eb; }
+.btn-outline-primary { color: #2563eb; border-color: #2563eb; }
+
+/* Forms */
+.form-control { height: calc(1.5em + .75rem + 2px); }
+
+/* Small screens: stack controls */
+@media (max-width: 576px) {
+  .d-flex.justify-content-between { flex-direction: column; gap: .5rem; align-items: stretch; }
+  .container main.container { padding: 0 0.5rem; }
 }

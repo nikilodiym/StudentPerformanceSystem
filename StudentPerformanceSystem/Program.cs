@@ -9,7 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages(options =>
 {
     options.RootDirectory = "/";
+    options.Conventions.AddPageRoute("/Pages/Index", "/");
     options.Conventions.AddPageRoute("/Features/Students/Pages/Index", "/Students");
+    options.Conventions.AddPageRoute("/Features/Courses/Index", "/Courses");
 });
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

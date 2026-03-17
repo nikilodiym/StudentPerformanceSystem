@@ -187,7 +187,6 @@ C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\o
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\StudentPerformanceSystem.genruntimeconfig.cache
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\ref\StudentPerformanceSystem.dll
 C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\StudentPerformanceSystem.sourcelink.json
-C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\x8up21ctd7-{0}-ideh39wrn7-ideh39wrn7.gz
 C:\Users\krenov\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\krenov\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\bin\Debug\net10.0\appsettings.json
 C:\Users\krenov\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\bin\Debug\net10.0\StudentPerformanceSystem.staticwebassets.runtime.json
@@ -378,3 +377,5 @@ C:\Users\krenov\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\
 C:\Users\krenov\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\StudentPerformanceSystem.pdb
 C:\Users\krenov\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\StudentPerformanceSystem.genruntimeconfig.cache
 C:\Users\krenov\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\ref\StudentPerformanceSystem.dll
+C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\x8up21ctd7-{0}-r2lljbbmlp-r2lljbbmlp.gz
+C:\Users\nikit\RiderProjects\StudentPerformanceSystem\StudentPerformanceSystem\obj\Debug\net10.0\compressed\x8up21ctd7-{0}-ro0tf3at83-ro0tf3at83.gz

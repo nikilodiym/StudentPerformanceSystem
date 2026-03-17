@@ -34,6 +34,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Features/Courses/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xQYWdlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Features/Students/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU3R1ZGVudHNcUGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Features/Users/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcVXNlcnNcUGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Pages/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nikit/RiderProjects/StudentPerformanceSystem/StudentPerformanceSystem/Pages/Error.cshtml]

@@ -5,26 +5,48 @@
     ViewData["Title"] = "Students";
 }
 
-<div class="container mt-5">
-    <h2>Students</h2>
+<div class="students-page mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3">Students</h1>
+        <a class="btn btn-outline-primary" href="#">Add Student</a>
+    </div>
 
-    <form method="post">
-        @Html.AntiForgeryToken()
-        <input asp-for="NewStudent.FirstName" placeholder="First Name"/>
-        <input asp-for="NewStudent.LastName" placeholder="Last Name"/>
-        <button type="submit">Add Student</button>
-    </form>
+    <div class="card">
+        <div class="card-body">
+            <form method="post" class="row g-2 mb-3">
+                @Html.AntiForgeryToken()
+                <div class="col-sm-5">
+                    <input class="form-control" asp-for="NewStudent.FirstName" placeholder="First Name" />
+                </div>
+                <div class="col-sm-5">
+                    <input class="form-control" asp-for="NewStudent.LastName" placeholder="Last Name" />
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-primary w-100" type="submit">Add</button>
+                </div>
+            </form>
 
-    <table>
-        @foreach (var student in Model.StudentList)
-        {
-            <tr>
-                <td>@student.FirstName</td>
-                <td>@student.LastName</td>
-                <td>
-                    <a asp-page="StudentDetail" asp-route-id="@student.Id">Details</a>
-                </td>
-            </tr>
-        }
-    </table>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var student in Model.StudentList)
+                        {
+                            <tr>
+                                <td>@student.FirstName</td>
+                                <td>@student.LastName</td>
+                                <td><a class="btn btn-sm btn-outline-secondary" asp-page="StudentDetail" asp-route-id="@student.Id">Details</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
